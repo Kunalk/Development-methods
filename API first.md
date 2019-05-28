@@ -41,13 +41,13 @@ Resources
 
 This API won’t do very much (the verbs have been removed). This is where HTTP methods i.e. GET, POST, PUT and DELETE come into play.
 
-Unormalized	Normalized	HTTP Method
+Unormalized	|Normalized	|HTTP Method|
 |/addNewTodoList -->|	/todo-lists|	POST|
-|/getAllTodoLists	-->|/todo-lists|	GET
-|/updateTodoList/1	-->| /todo-lists/1|	PUT
-|/deleteTodoList/1	-->| /todo-lists/1|	DELETE
-|/addNewTodoListItem/1	-->| /todo-lists/1/items|	POST
-|/markComplete/1	-->|/todo-lists/1/items/1|	PATCH  with payload with status/details { "completed": true }
+|/getAllTodoLists	-->|/todo-lists|	GET|
+|/updateTodoList/1	-->| /todo-lists/1|	PUT|
+|/deleteTodoList/1	-->| /todo-lists/1|	DELETE|
+|/addNewTodoListItem/1	-->| /todo-lists/1/items|	POST|
+|/markComplete/1	-->|/todo-lists/1/items/1|	PATCH  with payload with status/details { "completed": true }|
 
 ## A Note On Validation
 Dredd is a language-agnostic command-line tool for validating API description document against backend implementation of the API.
